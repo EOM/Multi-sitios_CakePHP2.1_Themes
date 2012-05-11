@@ -1,0 +1,1 @@
+<h1>Hola esto es mi PAGE en <?php echo SITIO; ?></h1>
