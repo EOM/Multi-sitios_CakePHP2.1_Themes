@@ -39,4 +39,30 @@ Archivo HOST
 Poner todos los archivos dentro de la carpeta `"c:/www/ck2.local"`
 
 Tambien tendrias que importa la DB que esta adjunta.
+`./_SQL/BD-Demo.sql`
+
+Y modificar el archivo de configuracion para poder conectar a MySQL
+`./app/Config/database.php`
+
+Archivo database.php
+====================
+
+    class DATABASE_CONFIG {
+    
+        public $default = array(
+    		'datasource' => 'Database/Mysql',
+    		'persistent' => false,
+    		'host' => 'localhost',
+    		'login' => 'UsuarioDataBaseDemo',
+    		'password' => 'PasswordDataBaseDemo',
+    		'database' => 'DataBaseTestDemo',
+    		'prefix' => '',
+    		'encoding' => 'utf8',
+    	);
+        
+        ...
+        ...
+        
+    }
+
 
